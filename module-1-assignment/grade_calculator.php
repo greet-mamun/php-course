@@ -1,9 +1,9 @@
 <?php
 
-    $score1 = $_POST['score1'];
-    $score2 = $_POST['score2'];
-    $score3 = $_POST['score3'];
-    $submit = $_POST['submit'];
+    $score1 = $_POST['score1'] ?? null;
+    $score2 = $_POST['score2'] ?? null;
+    $score3 = $_POST['score3'] ?? null;
+    $submit = $_POST['submit'] ?? null;
     $result = '';
     if(isset($submit)){
        $avarage = ($score1 + $score2 + $score3) / 3;

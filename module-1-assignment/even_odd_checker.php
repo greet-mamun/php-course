@@ -1,7 +1,7 @@
 <?php
 
-    $number = $_POST['number'];
-    $submit = $_POST['submit'];
+    $number = $_POST['number'] ?? null;
+    $submit = $_POST['submit'] ?? null;
     $message = '';
 
     if(isset($submit)){

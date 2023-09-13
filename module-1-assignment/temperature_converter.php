@@ -1,8 +1,8 @@
 <?php
 
-    $temperature = $_POST['temperature'];
-    $direction_value = $_POST['select_direction'];
-    $submit = $_POST['submit'];
+    $temperature = $_POST['temperature'] ?? null;
+    $direction_value = $_POST['select_direction'] ?? null;
+    $submit = $_POST['submit'] ?? null;
     $celcius = 0;
     $farenheit = 0;
     $message = '';

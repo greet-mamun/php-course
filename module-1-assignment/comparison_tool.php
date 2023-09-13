@@ -1,8 +1,8 @@
 <?php
 
-    $number1 = $_POST['number1'];
-    $number2 = $_POST['number2'];
-    $submit = $_POST['submit'];
+    $number1 = $_POST['number1'] ?? null;
+    $number2 = $_POST['number2'] ?? null;
+    $submit = $_POST['submit'] ?? null;
     $is_larger = '';
     if(isset($submit)){
        $is_larger = $number1 > $number2 ? "$number1 is larger." : "$number2 is larger.";

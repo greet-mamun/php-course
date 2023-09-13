@@ -1,9 +1,9 @@
 <?php
 
-    $number1 = $_POST['number1'];
-    $number2 = $_POST['number2'];
-    $submit = $_POST['submit'];
-    $calculation = $_POST['calculation'];
+    $number1 = $_POST['number1'] ?? null;
+    $number2 = $_POST['number2'] ?? null;
+    $submit = $_POST['submit'] ?? null;
+    $calculation = $_POST['calculation'] ?? null;
     $result = 0;
 
     if(isset($submit)){
